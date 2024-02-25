@@ -1,10 +1,11 @@
-# Bark GUI
+# Bark TTS GUI Fixed Google Colab
 
 [Changelog](#changelog) • [Example](#example-input) • [Installation](#installation) • [Usage](#usage) • [FAQ](#faq)
 
 
-A Gradio Web UI for an extended - easy to use - Bark Version, focused on Windows but not limited to.
+A Gradio Web UI Google Colab for an extended - easy to use - Bark Version, fixed by Nick088
 Based on [Bark](https://github.com/suno-ai/bark)
+and based on [Bark GUI](https://github.com/C0untFloyd/bark-gui)
 <p>
 <img src="./docs/tts.png" width="600"></img>
 </P>
@@ -31,28 +32,11 @@ We know NOW that in the early years of the twentieth century, this world was bei
 [Play resulting audio](https://user-images.githubusercontent.com/131583554/234322414-c90330e4-bbe8-4047-bea6-1f783d49204f.webm)
 
 
-### Installation
-
-For Windows you can now use the 1-click installer released. This will download and install everything
-in a handy conda environment. This not only installs the application but also runs it, once installed.
-
-### **If you already have a windows install from a version prior to v0.7 then it might be a good idea to re-install with the latest installer, because it changed a lot and the old installer isn't compatible. To avoid re-downloading the models you could create a backup of the bark-gui\models folder first **
- 
-For other OS or if you'd rather like to do this by yourself then:
-
-- `git clone https://github.com/C0untFloyd/bark-gui`
-- `pip install .`
-- (optional but best choice with NVIDIA GPUs) install Torch with CUDA `pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118 --force-reinstall`
-- `pip install -r requirements.txt`
-
-
 ### Usage
 
-- Windows Either run the `windows_run.bat` from the Installer or use the `StartBark.bat`. Edit the .bat files to add your desired commandline arguments 
-- Linux `python webui.py (and optional commandline arguments)`
-
-For more detailed instructions please have a look into the [Wiki](https://github.com/C0untFloyd/bark-gui/wiki)
-
+Run <a target="_blank" href="https://colab.research.google.com/github/Nick088Official/bark-gui-fix-google-colab/blob/main/Bark_GUI_Fix.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
 
 ### FAQ
 **Q:** Why do I get the warning "No GPU being used. Careful, inference might be very slow!", although I do have a NVIDIA GPU?
@@ -100,6 +84,11 @@ I'm doing this basically for myself but I'm glad if you enjoy my experiments too
 
 
 ### Changelog
+
+**26.02.2024** Fix Google Colab
+
+- webui.py
+- training/data/output for training
 
 **23.07.2023** Release V0.7.4
 
